@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study 01 — Project Title | Maria Alnaser</title>
+  <meta name="description" content="UX case study by Maria Alnaser." />
+
+  <!-- Same typography as your landing page -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="header" data-header>
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="Back to portfolio home">
+        <span class="logo__name">Maria Alnaser</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__bars" aria-hidden="true"></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a class="nav__link" href="index.html#work">Work</a></li>
+          <li><a class="nav__link" href="index.html#about">About</a></li>
+          <li><a class="nav__link" href="index.html#process">Process</a></li>
+          <li><a class="nav__link nav__cta" href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Optional reading progress bar (if you have JS for it) -->
+    <div class="progress" aria-hidden="true">
+      <div class="progress__bar" id="progressBar"></div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- CASE STUDY HERO -->
+    <section class="cs-hero section">
+      <div class="container cs-hero__grid">
+        <div class="cs-hero__content">
+          <p class="kicker">CASE STUDY 01</p>
+
+          <!-- Replace project title -->
+          <h1 class="cs-hero__title">SVEN- Strength Testing Application </h1>
+
+          <!-- Replace intro -->
+          <p class="cs-hero__subtitle">
+         A user-centered application for conducting, managing, and analysing strength tests, designed in collaboration with a real client and web development team.
+        </p>
+
+          <!-- Quick meta cards -->
+          <dl class="cs-meta">
+            <div class="cs-meta__item">
+              <dt>Role</dt>
+              <dd>UX / UI Designer</dd>
+            </div>
+            <div class="cs-meta__item">
+              <dt>Timeline</dt>
+              <dd> 20 weeks</dd>
+            </div>
+            <div class="cs-meta__item">
+              <dt>Platform</dt>
+              <dd>Mobile Application</dd>
+            </div>
+            <div class="cs-meta__item">
+              <dt>Tools</dt>
+              <dd>Figma</dd>
+            </div>
+          </dl>
+
+          <div class="cs-hero__actions">
+            <a class="btn btn--primary" href="#solution">Jump to Solution</a>
+            <a class="btn btn--outline" href="index.html#work">Back to Work</a>
+          </div>
+        </div>
+
+        <!-- Hero visual placeholder -->
+        <div class="cs-hero__visual" aria-hidden="true">
+          <!-- Replace this block with a real hero image later -->
+          <div class="cs-mock cs-mock--light">
+            <div class="cs-mock__top"></div>
+            <div class="cs-mock__body">
+            <div class="cs-mock__row"></div>
+            <div class="cs-mock__row"></div>
+            <div class="cs-mock__row w70"></div>
+            <div class="cs-mock__cards">
+            <div class="cs-mock__card"></div>
+            <div class="cs-mock__card"></div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN LAYOUT: TOC + CONTENT -->
+    <section class="cs">
+      <div class="container cs__grid">
+
+        <!-- STICKY TOC -->
+        <aside class="cs__toc" aria-label="On this page">
+          <div class="toc">
+            <p class="toc__title">On this page</p>
+            <a class="toc__link" href="#overview">Overview</a>
+            <a class="toc__link" href="#problem">Problem</a>
+            <a class="toc__link" href="#goals">Goals & Constraints</a>
+            <a class="toc__link" href="#research">Research</a>
+            <a class="toc__link" href="#ideation">Ideation</a>
+            <a class="toc__link" href="#wireframes">Wireframes</a>
+            <a class="toc__link" href="#mockups">Mockups</a>
+            <a class="toc__link" href="#prototype">Prototype</a>
+            <a class="toc__link" href="#solution">Final Solution</a>
+            <a class="toc__link" href="#outcomes">Outcomes</a>
+            <a class="toc__link" href="#reflection">Reflection</a>
+
+            <div class="toc__actions">
+              <a class="pillbtn pillbtn--gold" href="index.html#work">
+                <span class="pillbtn__icon" aria-hidden="true">←</span>
+                Back to Work
+              </a>
+            </div>
+          </div>
+        </aside>
+
+        <!-- CONTENT -->
+        <article class="cs__content">
+
+          <!-- OVERVIEW -->
+          <section class="cs-block" id="overview" data-section>
+            <h2 class="cs-h2">Overview</h2>
+            <p class="cs-p">
+              SVEN is a digital application developed alongside a portable strength-testing system. The app connects to the hardware via Bluetooth, receives measurement data in real time and helps users view, save and follow test results over time.
+The project was a collaboration between interaction designers, web developers, a sports researcher and the IoT company Jemac. Our UX challenge was to turn complex strength data into a clear and practical experience for coaches, fitness professionals and researchers
+
+            </p>
+
+            <div class="cs-cards">
+              <div class="cs-card">
+                <p class="cs-card__kicker">Context</p>
+                <p class="cs-card__text">Real client project <br>
+                  UX + development collaboration <br> Strength testing & IoT</p>
+              </div>
+              <div class="cs-card">
+                <p class="cs-card__kicker">Users</p>
+                <p class="cs-card__text">Physiotherapists & researchers <br>
+                  Coaches & personal trainers </p>
+              </div>
+              <div class="cs-card">
+                <p class="cs-card__kicker">My Contribution</p>
+                <p class="cs-card__text"> Contributed across the UX process, from user flows and wireframes to UI design, prototyping and usability testing</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- PROBLEM -->
+          <section class="cs-block" id="problem" data-section>
+            <h2 class="cs-h2">Problem</h2>
+            <p class="cs-p">
+              Strength testing systems can be complex and expensive, while the measurement data itself can be difficult to interpret quickly in practice. SVEN needed an interface that could connect the testing process, live measurements and stored results in one clear experience.
+            </p>
+
+            <div class="cs-quote">
+            <p>How might we make strength testing and performance data easier to manage, understand and follow over time? </p>
+              
+          </div>
+          </section>
+
+          <!-- GOALS & CONSTRAINTS -->
+          <section class="cs-block" id="goals" data-section>
+            <h2 class="cs-h2">Goals & Design Context</h2>
+
+            <div class="cs-solution">
+              <div class="cs-solution__panel">
+                <h3 class="cs-h3">Goals</h3>
+                <p class="cs-p muted">Make strength tests easier to perform and follow up </p>
+                <ul class="cs-bullets">
+                  <li>Present results and progress more clearly</li>
+                  <li>Support both individual and group testing</li>
+                  <li>Increase user confidence</li>
+                </ul>
+              </div>
+
+              <div class="cs-solution__panel">
+                <h3 class="cs-h3">Technical context</h3>
+                <p class="cs-p muted">Offline-first</p>
+                <ul class="cs-bullets">
+                  <li>Bluetooth connection to hardware</li>
+                  <li>Real-time measurement data</li>
+                  <li>Local data storage</li>
+                </ul>
+              </div>
+
+              <div class="cs-solution__panel">
+                <h3 class="cs-h3">Design Focus</h3>
+                <p class="cs-p muted">Clear navigation</p>
+                <ul class="cs-bullets">
+                  <li>Understandable data visualisation</li>
+                  <li>Simple testing flow</li>
+                  <li>Accessible to users with different levels of experience</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- RESEARCH -->
+          <section class="cs-block" id="research" data-section>
+            <h2 class="cs-h2">Research</h2>
+            <p class="cs-p">
+              Briefly list your research methods and what you learned. Keep it scannable.
+            </p>
+
+            <div class="cs-list">
+              <div class="cs-list__item">
+                <span class="cs-dot" aria-hidden="true"></span>
+                <div>
+                  <h3 class="cs-h3">Method</h3>
+                  <p class="cs-p muted">Usability testing, interviews, survey, analytics, etc.</p>
+                </div>
+              </div>
+
+              <div class="cs-list__item">
+                <span class="cs-dot" aria-hidden="true"></span>
+                <div>
+                  <h3 class="cs-h3">Key Insight</h3>
+                  <p class="cs-p muted">Example: users needed a clear “review” step before confirming.</p>
+                </div>
+              </div>
+
+              <div class="cs-list__item">
+                <span class="cs-dot" aria-hidden="true"></span>
+                <div>
+                  <h3 class="cs-h3">Design Opportunity</h3>
+                  <p class="cs-p muted">Example: simplify hierarchy, reduce choices per screen.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Optional research image space -->
+            <div class="cs-media">
+              <figure class="cs-figure">
+                <img
+                  src="assets/images/cs1/research-placeholder.png"
+                  alt="Research notes, affinity map, or insights summary"
+                  loading="lazy"
+                />
+                <figcaption class="cs-caption">Add research visual here (affinity map / insights).</figcaption>
+              </figure>
+
+              <div class="cs-media__caption">
+                <p class="cs-caption">
+                  Write 1–2 sentences explaining what this visual shows and what you concluded.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- IDEATION -->
+          <section class="cs-block" id="ideation" data-section>
+            <h2 class="cs-h2">Ideation</h2>
+            <p class="cs-p">
+              Explain how you explored solutions (flows, sketches, IA changes). Keep it short.
+            </p>
+
+            <div class="cs-cards">
+              <div class="cs-card">
+                <p class="cs-card__kicker">Explored</p>
+                <p class="cs-card__text">2–3 layout directions / flow options.</p>
+              </div>
+              <div class="cs-card">
+                <p class="cs-card__kicker">Decision</p>
+                <p class="cs-card__text">Why you picked the final direction.</p>
+              </div>
+              <div class="cs-card">
+                <p class="cs-card__kicker">Validation</p>
+                <p class="cs-card__text">How you checked it was correct.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- WIREFRAMES -->
+          <section class="cs-block" id="wireframes" data-section>
+            <h2 class="cs-h2">Wireframes</h2>
+            <p class="cs-p">
+              Add 1–2 wireframe images that show structure and flow decisions.
+            </p>
+
+            <div class="cs-image-grid">
+              <figure>
+                <img
+                  src="assets/images/cs1/wireframe-1.png"
+                  alt="Wireframe: key screen 1"
+                  loading="lazy"
+                />
+                <figcaption class="cs-caption">Wireframe: explain what changed and why.</figcaption>
+              </figure>
+
+              <figure>
+                <img
+                  src="assets/images/cs1/wireframe-2.png"
+                  alt="Wireframe: key screen 2"
+                  loading="lazy"
+                />
+                <figcaption class="cs-caption">Wireframe: explain the hierarchy / flow decision.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- MOCKUPS -->
+          <section class="cs-block" id="mockups" data-section>
+            <h2 class="cs-h2">High-Fidelity Mockups</h2>
+            <p class="cs-p">
+              Add 2–4 polished screens. Keep captions short and outcome-driven.
+            </p>
+
+            <div class="cs-image-grid">
+              <figure>
+                <img
+                  src="assets/images/cs1/mockup-1.png"
+                  alt="High fidelity mockup 1"
+                  loading="lazy"
+                />
+                <figcaption class="cs-caption">Mockup: clearer CTA and reduced clutter.</figcaption>
+              </figure>
+
+              <figure>
+                <img
+                  src="assets/images/cs1/mockup-2.png"
+                  alt="High fidelity mockup 2"
+                  loading="lazy"
+                />
+                <figcaption class="cs-caption">Mockup: added reassurance and fee breakdown.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- PROTOTYPE -->
+          <section class="cs-block" id="prototype" data-section>
+            <h2 class="cs-h2">Prototype (1–2 key screens)</h2>
+            <p class="cs-p">
+              Show 1–2 prototype screens that represent the interaction moment.
+              This is enough for recruiters.
+            </p>
+
+            <div class="cs-prototype">
+              <figure>
+                <img
+                  src="assets/images/cs1/prototype-1.png"
+                  alt="Prototype screen 1"
+                  loading="lazy"
+                />
+                <figcaption class="cs-caption">Step 1: main action is clear and calm.</figcaption>
+              </figure>
+
+              <figure>
+                <img
+                  src="assets/images/cs1/prototype-2.png"
+                  alt="Prototype screen 2"
+                  loading="lazy"
+                />
+                <figcaption class="cs-caption">Step 2: review screen reduces anxiety before submit.</figcaption>
+              </figure>
+            </div>
+
+            <!-- Optional: Figma prototype link (bonus, not required) -->
+            <div class="cs-prototype-link">
+              <a class="btn btn--outline" href="https://figma.com/your-prototype-link" target="_blank" rel="noreferrer">
+                View Interactive Prototype (optional)
+              </a>
+            </div>
+          </section>
+
+          <!-- FINAL SOLUTION -->
+          <section class="cs-block" id="solution" data-section>
+            <h2 class="cs-h2">Final Solution</h2>
+            <p class="cs-p">
+              Summarize the final solution in 2–3 bullets. What are the biggest improvements?
+            </p>
+
+            <div class="cs-solution">
+              <div class="cs-solution__panel">
+                <h3 class="cs-h3">1) Clear hierarchy</h3>
+                <p class="cs-p muted">One dominant primary action per screen.</p>
+              </div>
+              <div class="cs-solution__panel">
+                <h3 class="cs-h3">2) Review before submit</h3>
+                <p class="cs-p muted">Recipient + fees visible before confirmation.</p>
+              </div>
+              <div class="cs-solution__panel">
+                <h3 class="cs-h3">3) Stronger states</h3>
+                <p class="cs-p muted">Clear success / error feedback to build trust.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- OUTCOMES -->
+          <section class="cs-block" id="outcomes" data-section>
+            <h2 class="cs-h2">Outcomes</h2>
+            <p class="cs-p">
+              If you have metrics, show them. If not, show qualitative outcomes from testing.
+            </p>
+
+            <div class="cs-kpis">
+              <div class="kpi">
+                <p class="kpi__num">-32%</p>
+                <p class="kpi__label">time on task</p>
+              </div>
+              <div class="kpi">
+                <p class="kpi__num">+40%</p>
+                <p class="kpi__label">engagement</p>
+              </div>
+              <div class="kpi">
+                <p class="kpi__num">-18%</p>
+                <p class="kpi__label">support tickets</p>
+              </div>
+            </div>
+
+            <div class="cs-quote">
+              <p>“It feels much clearer — I know exactly what I’m about to send.”</p>
+              <span class="cs-quote__by">— usability test participant</span>
+            </div>
+          </section>
+
+          <!-- REFLECTION -->
+          <section class="cs-block" id="reflection" data-section>
+            <h2 class="cs-h2">Reflection</h2>
+            <p class="cs-p">
+              What did you learn? What would you improve next time? Keep it honest and confident.
+            </p>
+
+            <div class="cs-nav">
+              <a class="link" href="index.html#work">← Back to Work</a>
+              <a class="btn btn--primary" href="index.html#contact">Work with me</a>
+            </div>
+          </section>
+
+          <!-- OPTIONAL: NEXT PROJECT (nice for flow) -->
+          <section class="cs-block">
+            <h2 class="cs-h2">Next Case Study</h2>
+            <p class="cs-p">Continue to another project (optional).</p>
+            <a class="btn btn--outline" href="casestudie2.html">Open Case Study 02 →</a>
+          </section>
+
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

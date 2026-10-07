@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Maria Alnaser — UX Designer </title>
+    <meta
+      name="description"
+      content="UX Designer portfolio — designing intuitive digital experiences."
+    />
+
+    <!-- Fonts (similar vibe to your mock: elegant serif + clean sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <!-- Header / Nav -->
+    <header class="header" data-header>
+      <div class="container header__inner">
+        <a class="logo" href="#top" aria-label="Sarah Chen home">
+          <span class="logo__name">Maria Alnaser</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+            <span class="nav__bars" aria-hidden="true"></span>
+            <span class="sr-only">Open menu</span>
+          </button>
+
+          <ul class="nav__menu" id="navMenu">
+            <li><a class="nav__link" href="#work">Work</a></li>
+            <li><a class="nav__link" href="#about">About</a></li>
+            <li><a class="nav__link" href="#process">Process</a></li>
+            <li><a class="nav__link nav__cta" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="kicker">UX/UI DESIGNER</p>
+            <h1 class="hero__title">Designing with real user insight <br /></h1>
+            <p class="hero__subtitle">
+              I create research-driven digital products grounded in user behavior from discovery to interface design.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#work">
+                View My Work
+                <span class="btn__icon" aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn--outline" href="#contact">Get in Touch</a>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div class="avatar">
+              <div class="avatar__ring"></div>
+              <div class="avatar__inner">
+                <div class="avatar__head"></div>
+                <div class="avatar__body"></div>
+              </div>
+            </div>
+            <div class="blob blob--small"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section class="section" id="work">
+        <div class="container">
+          <header class="section__head">
+            <p class="kicker">SELECTED PROJECTS</p>
+            <h2 class="section__title">Featured Case Studies</h2>
+          </header>
+
+          <div class="cards">
+            <!-- Card 1 -->
+            <article class="card">
+              <a class="card__thumb card__thumb--light" href="#" aria-label="View FinFlow case study">
+                <!-- Thumbnail is built with CSS blocks for the same "mock" style -->
+                <div class="thumb-ui">
+                  <div class="thumb-ui__top"></div>
+                  <div class="thumb-ui__grid">
+                    <div class="thumb-ui__left">
+                      <div class="thumb-ui__circle"></div>
+                    </div>
+                    <div class="thumb-ui__right">
+                      <div class="thumb-ui__bar"></div>
+                      <div class="thumb-ui__bar"></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="card__body">
+                <p class="meta">CLIENT PROJECT</p>
+                <h3 class="card__title">SVEN – Strength Testing Application</h3>
+                <p class="card__text">
+                  Designing an intuitive application for conducting, managing, and analyzing strength tests in collaboration with a real client and a web development team.
+                </p>
+                <a class="link" href="casestudie1.html">
+                  View Case Study <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+              <a class="card__thumb card__thumb--navy" href="#" aria-label="View MediCare case study">
+                <div class="thumb-ui thumb-ui--dark">
+                  <div class="thumb-ui__tiles">
+                    <div class="thumb-ui__tile"></div>
+                    <div class="thumb-ui__tile"></div>
+                  </div>
+                  <div class="thumb-ui__panel">
+                    <div class="thumb-ui__lines"></div>
+                  </div>
+                  <div class="thumb-ui__dot"></div>
+                </div>
+              </a>
+
+              <div class="card__body">
+                <p class="meta">WEB PLATFORM</p>
+                <h3 class="card__title">MediCare Dashboard</h3>
+                <p class="card__text">
+                  Created an intuitive healthcare dashboard that reduced patient data lookup time by
+                  60% for medical professionals.
+                </p>
+                <a class="link" href="casestudie2.html">
+                  View Case Study <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+              <a class="card__thumb card__thumb--sand" href="#" aria-label="View Artisan case study">
+                <div class="thumb-ui thumb-ui--sand">
+                  <div class="thumb-ui__frame">
+                    <div class="thumb-ui__frameTop"></div>
+                    <div class="thumb-ui__frameGrid">
+                      <div class="thumb-ui__avatar"></div>
+                      <div class="thumb-ui__chips">
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="card__body">
+                <p class="meta">UX RESEARCH</p>
+                <h3 class="card__title">Wellbeing Mode</h3>
+                <p class="card__text">
+                  Explored how low-intrusive system support can improve focus and digital wellbeing through user research, prototyping, and usability testing.
+                </p>
+                <a class="link" href="casestudie3.html">
+                  View Case Study <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section section--tint" id="about">
+        <div class="container about">
+          <div class="about__media" aria-hidden="true">
+            <div class="about__art">
+              <div class="about__circle"></div>
+              <div class="about__base"></div>
+              <div class="about__accent"></div>
+            </div>
+          </div>
+
+          <div class="about__content">
+            <p class="kicker">ABOUT ME</p>
+            <h2 class="section__title">Thoughtful design, grounded in research</h2>
+            <p class="copy">
+              I’m a UX designer blending discovery research with interaction design and visual
+              systems. I partner with product and engineering to ship clear, accessible experiences.
+            </p>
+            <p class="copy">
+              My approach is simple: understand people deeply, prototype early, test often, and
+              refine until the experience feels effortless.
+            </p>
+
+            <div class="chips" aria-label="Skills">
+              <span class="chip">UX Design</span>
+              <span class="chip">Content Strategy</span>
+              <span class="chip">Design Systems</span>
+              <span class="chip">Prototyping</span>
+              <span class="chip">Mentoring</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="section" id="process">
+        <div class="container">
+          <header class="section__head">
+            <p class="kicker">PROCESS</p>
+            <h2 class="section__title">How I work</h2>
+          </header>
+
+          <div class="steps">
+            <div class="step">
+              <div class="icon" aria-hidden="true">
+                <!-- magnifier -->
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M16.2 16.2 21 21"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="step__title">Discover</h3>
+              <p class="step__text">Conduct user research through interviews and usability testing to understand real needs and behaviors.</p>
+            </div>
+
+            <div class="step">
+              <div class="icon" aria-hidden="true">
+                <!-- compass -->
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 21a9 9 0 1 0-9-9 9 9 0 0 0 9 9Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="m14.8 9.2-2 6-6 2 2-6 6-2Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="step__title">Define</h3>
+              <p class="step__text">Translate research findings into clear problem statements and design goals.</p>
+            </div>
+
+            <div class="step">
+              <div class="icon" aria-hidden="true">
+                <!-- pencil -->
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 20h9"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M16.5 3.5a2.1 2.1 0 0 1 3 3L8 18l-4 1 1-4 11.5-11.5Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="step__title">Design</h3>
+              <p class="step__text">Develop user flows, wireframes, and interactive prototypes grounded in research insights.</p>
+            </div>
+
+            <div class="step">
+              <div class="icon" aria-hidden="true">
+                <!-- beaker -->
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M10 2h4"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M10 2v6l-5.2 8.7A4 4 0 0 0 8.2 22h7.6a4 4 0 0 0 3.4-5.3L14 8V2"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 16h8"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="step__title">Validate</h3>
+              <p class="step__text">Test solutions with users and iterate based on feedback to improve usability.</p>
+            </div>
+
+            <div class="step">
+              <div class="icon" aria-hidden="true">
+                <!-- rocket -->
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M14 4c4 1 6 5 6 9-4 0-8-2-9-6"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 19c3-1 5-3 6-6-4 0-8 2-9 6 1 0 2 0 3 0Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10 14l-2 2"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="step__title">Deliver</h3>
+              <p class="step__text">Deliver development ready designs and support implementation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT / CTA -->
+      <section class="cta section--tint" id="contact">
+        <div class="container cta__inner">
+          <p class="kicker">GET IN TOUCH</p>
+          <h2 class="cta__title">Let's create something amazing together</h2>
+
+          <div class="cta__actions">
+            <a class="pillbtn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+              <span class="pillbtn__icon" aria-hidden="true">in</span>
+              LinkedIn
+            </a>
+            <a class="pillbtn" href="mailto:maria.alnasser1@gmail.com">
+              <span class="pillbtn__icon" aria-hidden="true">✉</span>
+              maria.alnasser1@gmail.com
+            </a>
+            <a class="pillbtn pillbtn--gold" href="assets/cv.pdf" download>
+              <span class="pillbtn__icon" aria-hidden="true">⬇</span>
+              Download CV
+            </a>
+          </div>
+
+          <p class="fineprint">© <span id="year"></span> Maria Alnaser. Designer • Creator • Built with ♥</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
